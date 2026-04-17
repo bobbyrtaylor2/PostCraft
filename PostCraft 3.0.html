@@ -222,7 +222,7 @@
       <div class="svc-block">
         <div class="svc-head">
           <div class="svc-icon">🔵</div>
-          <div><div class="svc-name">Google Gemini</div><div class="svc-sub">gemini-2.5-flash · Requires your own API key</div></div>
+          <div><div class="svc-name">Google Gemini</div><div class="svc-sub">gemini-3-flash-preview · Requires your own API key</div></div>
           <a class="svc-link" href="https://aistudio.google.com/app/apikey" target="_blank">Get key →</a>
         </div>
         <div class="key-row">
@@ -280,7 +280,7 @@
       <div class="ai-card" data-p="gemini" onclick="pickAI('gemini')">
         <div class="ai-icon">🔵</div>
         <div class="ai-name">Gemini</div>
-        <div class="ai-model">2.5 Flash</div>
+        <div class="ai-model">gemini-3-flash-preview</div>
         <div class="ai-badge needs-key" id="badgeGemini">🔑 Key needed</div>
       </div>
       <div class="ai-card" data-p="lmstudio" onclick="pickAI('lmstudio')">
@@ -774,7 +774,7 @@ async function callOpenAI(prompt) {
 async function callGemini(prompt) {
   const key = ls('pc_gemini');
   if (!key) throw new Error('Gemini key not set — click ⚙ API Keys');
-  const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${key}`, {
+  const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${key}`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }], generationConfig: { maxOutputTokens: 4096, temperature: 0.85 } })
