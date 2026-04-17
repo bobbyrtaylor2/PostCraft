@@ -85,8 +85,8 @@ OpenAI's flagship model — fast and broadly capable.
 - **Requires:** An OpenAI API key from [platform.openai.com/api-keys](https://platform.openai.com/api-keys)
 - **Cost:** Pay-per-use via OpenAI's API pricing
 
-### 🔵 Google Gemini (2.5 Flash)
-Google's Gemini 2.5 Flash — fast, efficient, and well-suited for high-volume use.
+### 🔵 Google Gemini (3.0 Flash Preview)
+Google's Gemini 3.0 Flash Preview — fast, efficient, and well-suited for high-volume use.
 - **Requires:** A Gemini API key from [aistudio.google.com/app/apikey](https://aistudio.google.com/app/apikey)
 - **Cost:** Free tier available; pay-per-use beyond that
 
